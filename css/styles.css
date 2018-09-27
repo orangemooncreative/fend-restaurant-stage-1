@@ -19,12 +19,12 @@
 
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body,td,th,p{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #333;
   line-height: 1.5;
 }
@@ -57,8 +57,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   display: block;
 }
 #maincontent {
-  background-color: #f3f3f3;
+  background-color: #fdfdfd;
+  max-width: 960px;
   min-height: 100%;
+  margin: 0 auto;
 }
 #footer {
   background-color: #444;
@@ -88,11 +90,12 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    padding: 1rem 2.5rem;
     list-style: none;
     background-color: #eee;
-    font-size: .75rem;
-    margin: 0;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    max-width: 960px;
     width: 100%;
 }
 
@@ -211,18 +214,15 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 400px;
-  position: relative;
-  right: 0;
-  top: 133px;
-  width: 100vw;
+  height: 500px;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -266,7 +266,6 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
   width: 50%;
 }
 #reviews-container {
@@ -337,7 +336,9 @@ nav h1 a {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  /* CSS */
+  .inside #map-container {
+    height: 400px;
+  }
 
 }
 
@@ -352,16 +353,6 @@ nav h1 a {
 
 }
 
-/*
-  Device = Low Resolution Tablets, Mobiles (Landscape)
-  Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-  /* CSS */
-
-}
 
 /*
   Device = Most of the Smartphones Mobiles (Portrait)
@@ -370,6 +361,19 @@ nav h1 a {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  /* CSS */
+  nav h1 a {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  #breadcrumb {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .inside #map-container {
+    height: 300px;
+  }
 
 }
