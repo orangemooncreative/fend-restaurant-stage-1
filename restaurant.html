@@ -20,20 +20,21 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1 aria-label="home"><a href="/">Restaurant Reviews</a></h1>
     </nav>
+
+    <!-- Begin skiplink -->
+    <a href="#restaurant-container" class="skip-link">skip to main content</a>
+    <!-- End skiplink -->
+
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb">
-      <li><a href="/">Home</a></li>
+    <ul role="navigation" aria-label="breadcrumb" id="breadcrumb">
+      <li><a aria-label="home" href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
-
-  <!-- Begin skiplink -->
-  <a href="#maincontent" class="skip-link">skip to main content</a>
-  <!-- End skiplink -->
 
   <!-- Beginning main -->
   <main id="maincontent">
