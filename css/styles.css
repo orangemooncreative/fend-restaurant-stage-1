@@ -69,7 +69,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   width: 100%;
 }
 
-
 #footer {
   background-color: #444;
   color: #aaa;
@@ -79,6 +78,29 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
+.skip-link {
+  background: #FF851B;
+  color: #111;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  padding: 0.75em 2rem;
+  z-index: 9999;
+}
+
+.skip-link:hover {
+  color: #252830;
+  text-decoration: underline;
+}
+
+.skip-link:focus {
+  color: #252830;
+  text-decoration: underline;
+  top: 0;
+}
+
+
 /* ====================== Navigation ====================== */
 nav {
   display: flex;
@@ -137,21 +159,21 @@ nav h1 a {
   background-color: #ccc;
 }
 /* ====================== Restaurant Filtering ====================== */
-.filter-options {
+#filter-options {
   width: 100%;
   height: 100%;
-  background-color: #3397DB;
+  background-color: #ffde11;
   align-items: center;
   padding: 1rem;
 }
-.filter-options h2 {
-  color: white;
+#filter-options h2 {
+  color: #111;
   font-size: 1.25rem;
   font-weight: normal;
   line-height: 1;
   margin: 0 0 1rem;
 }
-.filter-options select {
+#filter-options select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
@@ -409,7 +431,7 @@ and (orientation: landscape) {
   #restaurant-container,
   #reviews-container,
   #restaurants-list,
-  .filter-options {
+  #filter-options {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -442,7 +464,7 @@ and (orientation: landscape) {
     padding: 2rem;
   }
 
-  .filter-options {
+  #filter-options {
     margin-top: 2rem;
   }
 
@@ -520,15 +542,15 @@ and (orientation: portrait) {
     padding: 1.5rem 1rem;
   }
 
-  .filter-options {
+  #filter-options {
     text-align: center;
   }
 
-  .filter-options h2 {
+  #filter-options h2 {
     margin-bottom: 1rem;
   }
 
-  .filter-options select {
+  #filter-options select {
     width: 100%;
     margin: 0;
   }

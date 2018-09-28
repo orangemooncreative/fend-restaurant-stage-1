@@ -26,12 +26,17 @@
     </ul>
     <!-- End breadcrumb -->
   </header>
+
+  <!-- Begin skiplink -->
+  <a href="#filter-options" class="skip-link">skip to main content</a>
+  <!-- End skiplink -->
+
   <main id="maincontent">
     <section id="map-container">
       <div id="map"></div>
     </section>
     <section>
-      <div class="filter-options">
+      <div id="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
